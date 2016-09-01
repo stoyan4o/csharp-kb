@@ -1,6 +1,6 @@
 ﻿namespace KnowledgeBaseAllInOne
 {
-    partial class Form1
+    partial class GDIDrawInForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // GDIDrawInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(356, 228);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ClientSize = new System.Drawing.Size(490, 298);
+            this.Name = "GDIDrawInForm";
+            this.Text = "GDIDrawInForm";
+            this.Load += new System.EventHandler(this.GDIDrawInForm_Load);
             this.ResumeLayout(false);
 
         }
@@ -45,4 +45,3 @@
         #endregion
     }
 }
-

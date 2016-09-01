@@ -16,5 +16,11 @@ namespace KnowledgeBaseAllInOne
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // show on start this form
+            new GDIDrawInForm().Show();
+        }
     }
 }
