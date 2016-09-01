@@ -12,7 +12,6 @@ namespace KnowledgeBaseAllInOne
 {
     public partial class GDIDrawInForm : Form
     {
-
         Graphics g;
         Ball ball;
 
@@ -23,7 +22,7 @@ namespace KnowledgeBaseAllInOne
 
         private void GDIDrawInForm_Load(object sender, EventArgs e)
         {
-            g = Graphics.FromHwnd(this.Handle);
+            g = Graphics.FromHwnd(this.Handle); // use when drawing in a own method not in OnPaint
             ball = new Ball();
 
             ball.Pos.X = 40;
@@ -35,13 +34,11 @@ namespace KnowledgeBaseAllInOne
             base.OnPaint(e);
             ball.Draw(e.Graphics);
         }
-       
     }
 
     class SimpleSprite
     {
         internal Point Pos;
-
         protected Pen pen;
 
         public SimpleSprite()
@@ -54,6 +51,7 @@ namespace KnowledgeBaseAllInOne
             // 
         }
     }
+
     class Ball : SimpleSprite
     {
         public override void Draw(Graphics g)
@@ -61,5 +59,4 @@ namespace KnowledgeBaseAllInOne
             g.DrawEllipse(pen, this.Pos.X, this.Pos.Y, 20, 20);
         }
     }
-
 }
