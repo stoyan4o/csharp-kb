@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace KnowledgeBaseAllInOne
 {
-    public partial class Form1 : Form
+    public partial class CustomComparerForm : Form
     {
-        public Form1()
+        public CustomComparerForm()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // show on start this form
-            new GDIDrawInForm().Show();
         }
     }
 }
