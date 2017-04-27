@@ -60,5 +60,10 @@ namespace KnowledgeBaseAllInOne
         public string First { get; set; }
         public string Last { get; set; }
         public int Marks { get; set; }
+
+        public override string ToString()
+        {
+            return string.Format("{0} {1}", this.First, this.Last);
+        }
     }
 }

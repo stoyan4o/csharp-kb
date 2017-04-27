@@ -50,6 +50,24 @@
     <Compile Include="CustomComparerForm.Designer.cs">
       <DependentUpon>CustomComparerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoadSaveJSON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadSaveJSON.Designer.cs">
+      <DependentUpon>LoadSaveJSON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadSaveTextFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadSaveTextFile.Designer.cs">
+      <DependentUpon>LoadSaveTextFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadSaveXml.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadSaveXml.Designer.cs">
+      <DependentUpon>LoadSaveXml.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
